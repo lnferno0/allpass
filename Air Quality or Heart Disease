@@ -1,0 +1,22 @@
+*******The values in code are as my detaset you can change as per your detaset************
+
+
+###### Data Cleaning ####### 
+import pandas as pd
+d1=pd.read_csv("C:/Users/akash/Downloads/heart.csv")
+d2=d1.head(20)
+d3=d2.dropna()
+d4=d2.fillna("No data Found")
+
+
+
+####### Data Integration ####
+d2["chol"].mean()
+d2["chol"].mode()
+d2["chol"].mode()
+
+
+######## Data Transformation #######
+data1=pd.read_excel("C:/Users/akash/OneDrive/Documents/akash/TEIT/DSBD/mean1.xlsx")
+mean_purchase=data1.groupby("User Id")["Purchase"].mean().rename("Mean_Purchase").reset_index()
+data2=data1.merge(mean_purchase)
