@@ -17,6 +17,5 @@ d2["chol"].mode()
 
 
 ######## Data Transformation #######
-data1=pd.read_excel("C:/Users/akash/OneDrive/Documents/akash/TEIT/DSBD/mean1.xlsx")
-mean_purchase=data1.groupby("User Id")["Purchase"].mean().rename("Mean_Purchase").reset_index()
-data2=data1.merge(mean_purchase)
+mean_chol=d1.groupby("age")["chol"].mean().rename("Mean_chol").reset_index()
+d5=d1.merge(mean_chol)
