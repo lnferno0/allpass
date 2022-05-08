@@ -39,4 +39,4 @@ reg.intercept_
 pred=reg.predict(d5[['chol']])
 pred
 
-Now you have to copy this predicted values and peste in into excel file in new column and there is some process to find accuracy but it is not posible to explain here.. 
+Now you have to copy this predicted values and peste it into excel file in new column and there is some process to find accuracy but it is not posible to explain here.. 
