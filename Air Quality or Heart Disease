@@ -29,4 +29,12 @@ d5=d1.merge(mean_chol)
 comming soon
 
 
-######### 
+######### Data Model Building ############
+plt.scatter(d1.trestbps, d1.chol)
+reg=lm.LinearRegression()
+d6=d1.head(6)
+reg.fit(d6[['age']],d6.chol)
+reg.coef_
+reg.intercept_
+pred=reg.predict(d5[['chol']])
+pred
