@@ -1,0 +1,16 @@
+*******The values in code are as my detaset you can change as per your detaset************
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import linear_model as lm
+
+df=pd.read_csv("C:/Users/akash/Downloads/heart.csv" )
+df.iloc[0:10].plot(kind="line" ,linestyle="dashed" ,marker="o", markerfacecolor="blue" ,markersize=12 ,x="age" , y="chol" , color="red")
+df.iloc[0:10].plot(kind="bar" ,x="age" , y="chol" , color=["red","green"])
+df.iloc[0:10].plot(kind="hist" ,x="age" , color=["red"])
+x=[2,5,70,40,50,45,43,40,44,60,7,13,57,18,90,77,32,21,20,40]
+bins=10
+range=(0,50)
+plt.hist(x,bins,range)
+plt.hist(x,bins,range,histtype="bar" , rwidth=0.5)
