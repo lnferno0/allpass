@@ -19,3 +19,9 @@ d2["chol"].mode()
 ######## Data Transformation #######
 mean_chol=d1.groupby("age")["chol"].mean().rename("Mean_chol").reset_index()
 d5=d1.merge(mean_chol)
+
+
+
+######## Error Correction ########
+comming soon
+
