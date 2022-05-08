@@ -1,8 +1,11 @@
 *******The values in code are as my detaset you can change as per your detaset************
 
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn import lm
 
 ###### Data Cleaning ####### 
-import pandas as pd
 d1=pd.read_csv("C:/Users/akash/Downloads/heart.csv")
 d2=d1.head(20)
 d3=d2.dropna()
@@ -25,3 +28,5 @@ d5=d1.merge(mean_chol)
 ######## Error Correction ########
 comming soon
 
+
+######### 
