@@ -7,6 +7,7 @@ d1=pd.read_csv("C:/Users/akash/Downloads/heart.csv")
 d2=d1.head(20)
 d3=d2.dropna()
 d4=d2.fillna("No data Found")
+d1.iloc[[2,4,65,34,57,23]]
 
 
 
