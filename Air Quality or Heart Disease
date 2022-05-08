@@ -3,7 +3,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn import lm
+from sklearn import linear_model as lm
 
 ###### Data Cleaning ####### 
 d1=pd.read_csv("C:/Users/akash/Downloads/heart.csv")
