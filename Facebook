@@ -1,14 +1,35 @@
+*******The values in code are as my detaset you can change as per your detaset************
+
+
+##### Create Data Subset ########
 import pandas as pd
 d1=pd.read_csv("C:/Users/akash/Downloads/dataset_Facebook.csv")
-d1.shape
 d2=d1.head(13)
 d3=d1.tail(14)
 d4=d1.iloc[[10,20,30,40]]
+data5=data4[["Name","ROll_No"]]
+stacked=data5.stack()
 d1.columns
+
+######## Shape Data ############
+d1.shape
+
+
+
+######## Merge Data ##########
 data1=pd.DataFrame({"Name":["Akash","Anket","Adi","Vaibhav","Pranit"], "ROll_No":[1,2,3,4,5], "Mob_No":[123,234,345,456,567],})
 data2=pd.DataFrame({"Name":["Akash","Anket","Adi","Vaibhav","Pranit"], "Email":["akash1","Anket2","Adi3","Vaibhav4","Pranit5"],})
 data3=pd.merge(data1,data2,on="Name")
+
+
+
+######## Sort Data ##############
 data4=data3.sort_values("Name")
+
+
+####### Transposing Data ###########
 data5=data4.T
+
+
 data5=data4[["Name","ROll_No"]]
 stacked=data5.stack()
