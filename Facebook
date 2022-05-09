@@ -3,7 +3,7 @@
 
 ##### Create Data Subset ########
 import pandas as pd
-d1=pd.read_csv("C:/Users/akash/Downloads/dataset_Facebook.csv")
+d1=pd.read_csv("location of csv file")
 d2=d1.head(13)
 d3=d1.tail(14)
 d4=d1.iloc[[10,20,30,40]]
@@ -17,8 +17,8 @@ d1.shape
 
 
 ######## Merge Data ##########
-data1=pd.DataFrame({"Name":["Akash","Anket","Adi","Vaibhav","Pranit"], "ROll_No":[1,2,3,4,5], "Mob_No":[123,234,345,456,567],})
-data2=pd.DataFrame({"Name":["Akash","Anket","Adi","Vaibhav","Pranit"], "Email":["akash1","Anket2","Adi3","Vaibhav4","Pranit5"],})
+data1=pd.DataFrame({"Name":["5 Names"], "ROll_No":[1,2,3,4,5], "Mob_No":[123,234,345,456,567],})
+data2=pd.DataFrame({"Name":["Same 5 Names"], "Email":["5 emails for 5 names"],})
 data3=pd.merge(data1,data2,on="Name")
 
 
